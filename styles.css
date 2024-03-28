@@ -163,9 +163,9 @@ button:hover {
 .flex-container {
     display: flex;
     flex-wrap: wrap;
-  }
+}
   
-  .github-project {
+.github-project {
     display: flex;
     align-items: center;
     justify-content: space-between;

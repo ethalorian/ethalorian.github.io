@@ -236,7 +236,7 @@ button:hover {
     #details {
         order: 2;
         padding: 20px;
-        max-width: 75%;
+        max-width: 90%;
         box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.75);
         border: 2px solid black;
         text-shadow: 2px 2px 5px rgba(73, 153, 202, 0.9);
@@ -245,7 +245,7 @@ button:hover {
     #social-nav {
         order: 3;
         padding: 10px;
-        max-width: 75%;
+        max-width: 90%;
     }
 
     #divider {

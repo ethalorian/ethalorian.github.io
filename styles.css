@@ -254,7 +254,7 @@ button:hover {
 
     .icon {
         padding: 10px;
-        width: 2px;
+        width: .25em;
         height: auto;
         text-align: center;
     }

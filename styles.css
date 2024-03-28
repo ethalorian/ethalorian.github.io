@@ -253,9 +253,8 @@ button:hover {
     }
 
     .icon {
-        padding: 10px;
-        width: .25em;
-        height: auto;
+        margin: 2px;
+        padding: 6px;
         text-align: center;
     }
     

@@ -1,0 +1,270 @@
+.app {
+    width: 90vw;
+    height: 90vh;
+    background-color: rgba(200, 200, 200, 0.85);
+    background-image:
+        radial-gradient(circle at center, rgba(255, 255, 255, 0.5) 30%, rgba(0, 0, 0, 0.8) 90%), 
+        linear-gradient(rgba(200, 200, 200, 0.85), rgba(200, 200, 200, 0.85)),
+        url(hexa-pattern-09.png);
+    background-size: 100%;
+    display: grid;
+    gap: 20px;
+    grid-template-rows: .25fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr .01fr 1fr;
+    font-family: "Cabin", sans-serif;
+    font-size: 1em;
+}
+
+.item {
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 5px;
+    
+}
+
+
+
+#profile {
+    grid-row-start: 2;
+    grid-row-end: span 5;
+    grid-column-start: 1;
+    display: flex; /* Optional: Used to center content */
+    justify-content: center; /* Optional: Horizontally center content */
+    align-items: center; /* Optional: Vertically center content */
+    margin: 20px;
+}
+
+#social-nav {
+    grid-row-start: 4;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    background: rgb(210, 88, 12); 
+    padding: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid black;
+    display: flex; /* Use Flexbox */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+    flex-wrap: nowrap; /* Center items vertically (optional) */
+    gap: 10px; /* Add space between images */
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#social-nav img {
+    width: 40px;
+    height: auto;
+    padding: 5px;
+    
+}
+
+#details {
+    grid-row-start: 3;
+    grid-row-end: 4;
+    grid-column-start: 3;
+    background: rgb(148, 131, 121); 
+    color: rgb(57, 23, 0);
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.75);
+    border: 2px solid black;
+    text-shadow: 2px 2px 5px rgba(73, 153, 202, 0.9);
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+#pacman {
+    background-image: url(./Pacman.png);
+    background-size: 25%;
+    background-position: right;
+}
+
+#pacman:hover {
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.75); /* Larger shadow to create a raised effect */
+    transform: translateY(-7.5px); /* Move the button up */
+}
+
+#eyes {
+    background-image: url(./Eyes.png);
+    background-size: cover;
+    background-position: center;
+}
+
+#eyes:hover {
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.75); /* Larger shadow to create a raised effect */
+    transform: translateY(-7.5px); /* Move the button up */
+}
+
+#bus {
+    background-image: url(./MBTA.png);
+    background-size: contain;
+    background-position: bottom;
+}
+
+#bus:hover {
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.75); /* Larger shadow to create a raised effect */
+    transform: translateY(-7.5px); /* Move the button up */
+}
+
+#projects button {
+    background: rgb(73, 153, 202); 
+    padding: 20px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    border: 2px solid rgb(0, 0, 0);
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 1px 1px 0 #000;
+    border-bottom-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 5px;
+    font-size: 1.5em;
+    cursor: pointer;
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition for box-shadow and transform */
+    margin-left: 20px;
+
+}
+button:hover {
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.75); /* Larger shadow to create a raised effect */
+    transform: translateY(-7.5px); /* Move the button up */
+}
+
+#divider {
+    grid-column: 2;
+    grid-row-start: 2;
+    grid-row-end: 6;
+    background: black;
+}
+
+.ETH {
+    width: 375px;
+    height: auto;
+    border-radius: 60% / 60%;
+    border: 2px solid rgb(0, 0, 0); 
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.85);   
+}
+
+.ETH:hover {
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.75); /* Larger shadow to create a raised effect */
+    transform: translateY(-7.5px); /* Move the button up */
+}
+
+.icon {
+  padding: 20px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+}
+
+.icon:hover {
+    opacity: 0.25;
+    transform: translateY(-7.5px); /* Move the button up */
+}
+
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .github-project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 1px solid black;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5);
+    height: 100px;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+  
+.github-project img {
+    width: 50%;
+    height: auto;
+}
+  
+.description {
+    background-color: white;
+    color: black;
+    font-size: .66em;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    left: 100%; /* Start off the screen */
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: left 0.7s ease, opacity 0.3s ease;
+}
+
+.github-project:hover .description {
+    left: 0; /* Slide in */
+    opacity: 1;
+}
+
+#details, img:hover {
+    transform: translateY(-7.5px); /* Move the button up */
+}
+
+@media (max-width: 1000px) {
+    .app {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        max-width: 95%;
+        margin-bottom: 40px;
+        
+    }
+
+    #profile, #details, #social-nav {
+        width: 100%; /* Make each section take the full width */
+        max-width: 600px; /* Adjust the max width as needed */
+    }
+
+    #profile {
+        order: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #details {
+        order: 2;
+        padding: 20px;
+        max-width: 75%;
+        box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.75);
+        border: 2px solid black;
+        text-shadow: 2px 2px 5px rgba(73, 153, 202, 0.9);
+    }
+
+    #social-nav {
+        order: 3;
+        padding: 5px;
+        max-width: 75%;
+    }
+
+    #divider {
+        display: none; /* Hide the divider on mobile */
+    }
+
+    .icon {
+        padding: 5px;
+        width: 7.5px;
+        text-align: center;
+    }
+    
+    #projects button {
+        font-size: 1.1em;
+        margin-right: 20px;
+    }
+}
+
+
+
+
+
